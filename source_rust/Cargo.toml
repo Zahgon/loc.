@@ -1,0 +1,25 @@
+[package]
+name = "loc"
+version = "0.5.0"
+description = "Count lines of code (cloc) fast."
+authors = ["Curtis Gagliardi <curtis@curtis.io>"]
+
+repository = "https://github.com/cgag/loc"
+homepage = "https://github.com/cgag/loc"
+documentation = "https://github.com/cgag/loc"
+
+license="MIT"
+
+[dependencies]
+clap          = "2.34.0"
+deque         = "0.3.2"
+memchr        = "2.4.1"
+regex         = "1.5.4"
+num_cpus      = "1.13.1"
+ignore        = "0.4.18"
+edit-distance = "2.1.0"
+smallvec      = "1.8.0"
+
+[profile.release]
+incremental = false
+lto = true

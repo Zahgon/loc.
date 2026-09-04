@@ -1,0 +1,8 @@
+# The Rust original is vendored unmodified under source_rust/ as the reference
+# implementation for the differential tests. It is not this project's source.
+source_rust/**   linguist-vendored=true
+
+# Migration scratch, not project source.
+*.patch          linguist-generated=true
+truth.md         linguist-generated=true
+instructions.md  linguist-generated=true

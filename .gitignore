@@ -1,0 +1,24 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log
+*.tgz
+.npm
+
+# Test / coverage output
+coverage/
+*.log
+cloc-out
+
+# Build output of the vendored Rust reference
+source_rust/target/
+
+# Profiling
+perf.data
+perf.old.data
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
