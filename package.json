@@ -1,0 +1,45 @@
+{
+  "name": "loc-js",
+  "version": "0.5.0",
+  "description": "Count lines of code (cloc) fast. A JavaScript port of cgag/loc.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "loc": "./bin/loc.js"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "DIFFERENCES.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "gen:tables": "node tools/gen-tables.mjs",
+    "check:tables": "node tools/gen-tables.mjs --check",
+    "typecheck": "tsc --noEmit -p jsconfig.json",
+    "test": "node --test \"test/**/*.test.js\"",
+    "test:diff": "node test/differential/run.mjs",
+    "bench": "node test/bench.mjs"
+  },
+  "keywords": [
+    "cloc",
+    "loc",
+    "lines-of-code",
+    "sloc",
+    "count",
+    "cli"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,17 +1,24 @@
-target
-small
-medium
-big
-big2
-big3
-big4
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log
+*.tgz
+.npm
 
-plasma.c
-plasma-huge.c
-test.c
-lines.c
-
+# Test / coverage output
+coverage/
+*.log
 cloc-out
 
+# Build output of the vendored Rust reference
+source_rust/target/
+
+# Profiling
 perf.data
 perf.old.data
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
